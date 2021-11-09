@@ -107,18 +107,9 @@ async function run() {
         })
 
 
-        // UPDATE order status dipu
-        // app.patch('/update/:id', (req, res) => {
-        //     bookingCollection.updateOne({ _id: ObjectId(req.params.id) },
-        //         {
-        //             $set: { currentStatus: req.body.currentStatus }
-        //         })
-        //         .then((result) => {
-        //             res.send(result.modifiedCount > 0)
-        //         })
-        // })
+        
 
-        // UPDATE order status bithy
+        // UPDATE order 
         app.put('/allBooking/:id', (req, res) => {
             const filter = { _id: ObjectId(req.params.id) }
             bookingCollection.updateOne(filter, {
