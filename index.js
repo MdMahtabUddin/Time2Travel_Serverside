@@ -132,7 +132,7 @@ async function run() {
 run().catch(console.dir);
 
 app.get('/', (req, res) => {
-    res.send('Basecamp server is running!')
+    res.send('travel server is running!')
 })
 
 app.listen(port, () => {
